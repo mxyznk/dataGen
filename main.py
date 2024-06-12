@@ -67,7 +67,7 @@ def generate_csv(num_rows, file_name):
 
     return dframe
 
-@st.cache_data
+@st.cache_data 
 def convert_df(dframe):
     # TO SAVE THE FILE LOCALLY:
     # csv_path = f'../pythonProject2/data/{file_name}.csv'
