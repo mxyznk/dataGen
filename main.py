@@ -70,8 +70,8 @@ def generate_csv(num_rows, file_name):
 @st.cache_data
 def convert_df(dframe):
     # TO SAVE THE FILE LOCALLY:
-    csv_path = f'../pythonProject2/data/{file_name}.csv'
-    dframe.to_csv(csv_path, index=False)
+    # csv_path = f'../pythonProject2/data/{file_name}.csv'
+    # dframe.to_csv(csv_path, index=False)
 
     # IMPORTANT: Cache the conversion to prevent computation on every rerun
     return dframe.to_csv().encode("utf-8")
