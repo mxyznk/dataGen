@@ -88,11 +88,11 @@ if __name__ == '__main__':
     if submitted:
         with st.spinner('Generating...'):
             df = generate_csv(num_rows, file_name)
-            csv_data = convert_df(df)
+            csv = convert_df(df)
             st.success(f"{file_name}.csv generated")
             st.download_button(
                 label="Download",
-                data=csv_data,
+                data=csv,
                 file_name=f"{file_name}.csv",
                 mime="text/csv",
             )
