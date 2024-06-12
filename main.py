@@ -61,11 +61,11 @@ def generate_csv(num_rows, file_name):
             s_OppBrokerId, d_OrderEntryDateTime, s_CTCLId, n_ExNo, n_SchemaId
         ])
 
-    df = pd.DataFrame(data, columns=columns)
+    dframe = pd.DataFrame(data, columns=columns)
     for col in date_columns:
-        df[col] = df[col].astype(str)
+        dframe[col] = dframe[col].astype(str)
 
-    return df
+    return dframe
 
 @st.cache_data
 def convert_df(dframe):
