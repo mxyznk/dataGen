@@ -78,7 +78,7 @@ def convert_df(dframe):
 
 
 if __name__ == '__main__':
-    st.title("Generate Data")
+    st.title("Generate sample Data")
 
     with st.form("my_form"):
         file_name = st.text_input("Enter file name")
